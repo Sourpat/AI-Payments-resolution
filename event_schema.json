@@ -1,0 +1,27 @@
+{
+  "attempt_id": "uuid",
+  "account_id": "string",
+  "payment_method": "enum['credit_card','ach','wire']",
+  "amount": "number",
+  "currency": "string",
+  "provider": "string",
+  "raw_code": "string",
+  "raw_message": "string",
+  "http_status": "number",
+  "timestamp": "2025-11-09T20:00:23.038933Z",
+  "classification": {
+    "category": "string",
+    "confidence": "number",
+    "source": "enum['rules','ml','manual']"
+  },
+  "resolution": {
+    "action_taken": "string",
+    "success": "boolean",
+    "time_to_resolve_seconds": "number"
+  },
+  "audit": {
+    "actor": "enum['system','agent','user']",
+    "approved_by": "string|null",
+    "notes": "string"
+  }
+}
